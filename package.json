@@ -1,0 +1,12 @@
+{
+  "name": "nodepycomm",
+  "version": "1.0.0",
+  "description": "A node js add on for python communications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Loyde Cochran-Bjerke",
+  "license": "ISC"
+}
