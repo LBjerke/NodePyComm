@@ -20,7 +20,7 @@ pythonScript.stdout.on('end', function(){
   //for TCP send
   TCPsender.TCPsend(splitter[0],splitter[1],dataString);
 });
-//this is for sending data in to python Script
+//this is for sending data in to the python Script
 pythonScript.stdin.write(JSON.stringify(data));
 
 pythonScript.stdin.end();
