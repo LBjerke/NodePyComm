@@ -1,6 +1,6 @@
 var net = require('net')
 var client = new net.Socket();
-module.exports.TCPrs = function(socket,IP, msg){
+module.exports.TCPsend = function(socket,IP, msg){
 
 client.connect(socket, IP, function() {
 	console.log('Connected');
