@@ -17,7 +17,7 @@ def main():
     lines_sum = np.sum(np_lines)
 
     #return the sum to the output stream
-    print lines_sum
+    print "1337,127.0.0.1 , HELLO WORLD"
 
 #start process
 if __name__ == '__main__':

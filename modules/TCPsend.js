@@ -1,14 +1,15 @@
 var net = require('net')
 var client = new net.Socket();
-module.exports.TCPrs = function(socket,IP){
+module.exports.TCPrs = function(socket,IP, msg){
 
-client.connect(1337, '127.0.0.1', function() {
+client.connect(socket, IP, function() {
 	console.log('Connected');
-	client.write('Hello, server! Love, Client.');
+	client.write(msg);
 });
 var i = 0;
 client.on('data', function(data) {
 	console.log('Received: ' + data);
+	//this is for testing purposes
 	i++;
 	if(i==1){
 		client.destroy();

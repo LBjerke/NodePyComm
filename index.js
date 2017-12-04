@@ -13,9 +13,14 @@ pythonScript.stdout.on('data', function(data){
 
 pythonScript.stdout.on('end', function(){
   console.log(dataString);
+  var spliter = dataString.split(',');
+  //for UDP send
+  UDPsender.UDPsend(spliter[0],spliter[1],dataString);
+  //for TCP send
+  TCPsender.TCPrs(spliter[0],spliter[1],dataString);
 });
 
 pythonScript.stdin.write(JSON.stringify(data));
 
 pythonScript.stdin.end();
-TCPsender.TCPrs(1337,'127.0.0.1');
+//TCPsender.TCPrs(1337,'127.0.0.1',"hello world");
