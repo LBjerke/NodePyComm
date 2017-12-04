@@ -8,5 +8,5 @@
     "start": "node index.js"
   },
   "author": "Loyde Cochran-Bjerke",
-  "license": "ISC"
+  "license": "MIT"
 }
